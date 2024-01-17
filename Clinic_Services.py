@@ -222,8 +222,8 @@ class Ui_MainWindow(object):
             self.label_3.setText("No Services Listed")
         else:
             f= open("ticket.txt","w+")
-            f.write("Benech Family Clinic\n")
-            f.write("Client:%s \n"% (self.lineEdit_2.text()))
+            f.write(self.ticketText)
+            f.write("/nClient:%s \n"% (self.lineEdit_2.text()))
             Date = date.today()
             Date = Date.strftime("%d-%m-%Y")
             f.write("Date: %s \n"% Date )
@@ -243,16 +243,16 @@ class Ui_MainWindow(object):
             self.lineEdit_2.clear()
             self.label_3.setText("Full Price:0 USD")
             
-            out = new("RGB", (330,200 + 15*self.CountServices), (255, 255, 255)) 
+            out = new("RGB", (360,200 + 15*self.CountServices), (255, 255, 255)) 
             # get a font
             fnt =truetype("Pillow/Tests/fonts/cour.ttf", 12)
             # get a drawing context
             d = Draw(out)
             f= open("ticket.txt","r")
-            im  = op("Logo.jpg")
+            im  = op("Logo.ico")
             out.paste(im , (110,1))
             # draw multiline text
-            d.multiline_text((5, 100), f.read(), font=fnt, fill=(0, 0, 0))
+            d.multiline_text((50, 100), f.read(), font=fnt, fill=(0, 0, 0))
             
             out.save("out.png")
             self.CountServices = 0
@@ -307,7 +307,15 @@ class Ui_MainWindow(object):
             self.Log["Sheet"]["A1"] = ""
             self.Log["Sheet"]["B1"] = ""
             self.Log["Sheet"].column_dimensions["A"].width = 40
-            self.Log.save("Services.xlsx") 
+            self.Log.save("Services.xlsx")
+        if exists("ticketText.txt"):
+            file = open("ticketText.txt" , 'r')
+            self.ticketText = file.read()
+            file.close()
+        else:
+            file = open("ticketText.txt" , 'a')
+            self.ticketText = ""
+
             
         self.ws = self.Log["Sheet"]
         self.names = []
