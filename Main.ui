@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>446</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(3, 0, 30);
+color:rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>421</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0" columnstretch="3,0">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Client Name</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Add Service</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="styleSheet">
+        <string notr="true">QTableView::item:selected { color:white; background:#000000; font-weight:900; }
+QTableCornerButton::section { background-color:#232326; }
+QHeaderView::section { color:white; background-color:#232326; }
+QTableView::item{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 65), stop:1 rgba(255, 255, 255, 255));
+}
+        </string>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>false</bool>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string> 1 </string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string> 2</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string> 3</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string> 4</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Service</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignLeading|AlignVCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Price</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#232326;
+color:rgb(255, 255, 255);
+
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#232326;
+	color:rgb(255, 255, 255)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>237</x>
+      <y>270</y>
+      <width>191</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#232326;</string>
+    </property>
+    <property name="text">
+     <string>Print</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tip: You Can Double Clic on any Row of the table to delete it</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>446</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuServicios">
+    <property name="title">
+     <string>Services</string>
+    </property>
+    <addaction name="actionAdd_Service"/>
+    <addaction name="actionCheck_Database"/>
+   </widget>
+   <addaction name="menuServicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_Service">
+   <property name="text">
+    <string>Add Service to Database</string>
+   </property>
+  </action>
+  <action name="actionCheck_Database">
+   <property name="text">
+    <string>Check Database</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>tableWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

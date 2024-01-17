@@ -1,0 +1,178 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'Main.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(446, 346)
+        MainWindow.setAutoFillBackground(False)
+        MainWindow.setStyleSheet(".QWidget{\n"
+"background-image : url(2020-11s-18.jpg);\n"
+"color:rgb(255, 255, 255);\n"
+"}")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(10, 10, 421, 251))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.layoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.label = QtWidgets.QLabel(self.layoutWidget)
+        self.label.setMaximumSize(QtCore.QSize(16777215, 22))
+        font = QtGui.QFont()
+        font.setFamily("Calibri")
+        font.setPointSize(12)
+        self.label.setFont(font)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_2.setMaximumSize(QtCore.QSize(16777215, 22))
+        font = QtGui.QFont()
+        font.setFamily("Calibri")
+        font.setPointSize(12)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("")
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 0, 1, 1, 1)
+        self.tableWidget = QtWidgets.QTableWidget(self.layoutWidget)
+        self.tableWidget.setStyleSheet("QTableView::item:selected { color:white; background:#000000; font-weight:900; }\n"
+"QTableCornerButton::section { background-color:#232326; }\n"
+"QHeaderView::section { color:white; background-color:#232326; }\n"
+"QTableView::item{\n"
+"    background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 65), stop:1 rgba(255, 255, 255, 255));\n"
+"}\n"
+"        ")
+        self.tableWidget.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableWidget.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContentsOnFirstShow)
+        self.tableWidget.setAlternatingRowColors(False)
+        self.tableWidget.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        self.tableWidget.setWordWrap(False)
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(2)
+        self.tableWidget.setRowCount(4)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        self.tableWidget.horizontalHeader().setStretchLastSection(False)
+        self.gridLayout.addWidget(self.tableWidget, 2, 0, 1, 2)
+        self.lineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit.sizePolicy().hasHeightForWidth())
+        self.lineEdit.setSizePolicy(sizePolicy)
+        self.lineEdit.setMaximumSize(QtCore.QSize(200, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.lineEdit.setFont(font)
+        self.lineEdit.setStyleSheet("background-color:#232326;\n"
+"color:rgb(255, 255, 255);\n"
+"\n"
+"")
+        self.lineEdit.setObjectName("lineEdit")
+        self.gridLayout.addWidget(self.lineEdit, 1, 1, 1, 1)
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.layoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_2.sizePolicy().hasHeightForWidth())
+        self.lineEdit_2.setSizePolicy(sizePolicy)
+        self.lineEdit_2.setMaximumSize(QtCore.QSize(200, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.lineEdit_2.setFont(font)
+        self.lineEdit_2.setStyleSheet("background-color:#232326;\n"
+"    color:rgb(255, 255, 255)")
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.gridLayout.addWidget(self.lineEdit_2, 1, 0, 1, 1)
+        self.gridLayout.setColumnStretch(0, 3)
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(237, 270, 191, 27))
+        self.pushButton.setStyleSheet("background-color:#232326;")
+        self.pushButton.setObjectName("pushButton")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(20, 260, 211, 51))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_3.setFont(font)
+        self.label_3.setTextFormat(QtCore.Qt.AutoText)
+        self.label_3.setScaledContents(False)
+        self.label_3.setWordWrap(True)
+        self.label_3.setObjectName("label_3")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 446, 21))
+        self.menubar.setObjectName("menubar")
+        self.menuServicios = QtWidgets.QMenu(self.menubar)
+        self.menuServicios.setObjectName("menuServicios")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.actionAdd_Service = QtWidgets.QAction(MainWindow)
+        self.actionAdd_Service.setObjectName("actionAdd_Service")
+        self.actionCheck_Database = QtWidgets.QAction(MainWindow)
+        self.actionCheck_Database.setObjectName("actionCheck_Database")
+        self.menuServicios.addAction(self.actionAdd_Service)
+        self.menuServicios.addAction(self.actionCheck_Database)
+        self.menubar.addAction(self.menuServicios.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        MainWindow.setTabOrder(self.lineEdit_2, self.lineEdit)
+        MainWindow.setTabOrder(self.lineEdit, self.pushButton)
+        MainWindow.setTabOrder(self.pushButton, self.tableWidget)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "Client Name"))
+        self.label_2.setText(_translate("MainWindow", "Add Service"))
+        item = self.tableWidget.verticalHeaderItem(0)
+        item.setText(_translate("MainWindow", " 1 "))
+        item = self.tableWidget.verticalHeaderItem(1)
+        item.setText(_translate("MainWindow", " 2"))
+        item = self.tableWidget.verticalHeaderItem(2)
+        item.setText(_translate("MainWindow", " 3"))
+        item = self.tableWidget.verticalHeaderItem(3)
+        item.setText(_translate("MainWindow", " 4"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "Service"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "Price"))
+        self.pushButton.setText(_translate("MainWindow", "Print"))
+        self.label_3.setText(_translate("MainWindow", "Tip: You Can Double Clic on any Row of the table to delete it"))
+        self.menuServicios.setTitle(_translate("MainWindow", "Services"))
+        self.actionAdd_Service.setText(_translate("MainWindow", "Add Service to Database"))
+        self.actionCheck_Database.setText(_translate("MainWindow", "Check Database"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
