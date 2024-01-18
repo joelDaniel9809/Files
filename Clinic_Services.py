@@ -223,7 +223,7 @@ class Ui_MainWindow(object):
         else:
             f= open("ticket.txt","w+")
             f.write(self.ticketText)
-            f.write("/nClient:%s \n"% (self.lineEdit_2.text()))
+            f.write("\nClient:%s \n"% (self.lineEdit_2.text()))
             Date = date.today()
             Date = Date.strftime("%d-%m-%Y")
             f.write("Date: %s \n"% Date )
@@ -243,16 +243,16 @@ class Ui_MainWindow(object):
             self.lineEdit_2.clear()
             self.label_3.setText("Full Price:0 USD")
             
-            out = new("RGB", (360,200 + 15*self.CountServices), (255, 255, 255)) 
+            out = new("RGB", (370,200 + 17*self.CountServices), (255, 255, 255)) 
             # get a font
             fnt =truetype("Pillow/Tests/fonts/cour.ttf", 12)
             # get a drawing context
             d = Draw(out)
             f= open("ticket.txt","r")
             im  = op("Logo.ico")
-            out.paste(im , (110,1))
+            out.paste(im , (135,5))
             # draw multiline text
-            d.multiline_text((50, 100), f.read(), font=fnt, fill=(0, 0, 0))
+            d.multiline_text((30, 100), f.read(), font=fnt, fill=(0, 0, 0))
             
             out.save("out.png")
             self.CountServices = 0
